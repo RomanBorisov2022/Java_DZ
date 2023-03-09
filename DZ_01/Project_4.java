@@ -40,7 +40,7 @@ public class Project_4 {
     }
  
     public static int calc(int num1, int num2, char operation){
-        int result;
+        int result = 0;
         switch (operation){
             case '+':
                 result = num1+num2;
@@ -52,12 +52,14 @@ public class Project_4 {
                 result = num1*num2;
                 break;
             case '/':
-                result = num1/num2;
+                if (num2 != 0)
+                    result = num1/num2;
+                else System.out.println("На ноль делить нельзя!");
                 break;
             default:
                 System.out.println("Операция не распознана. Повторите ввод.");
                 result = calc(num1, num2, getOperation());
-        }
+            }
         return result;
     }
 }

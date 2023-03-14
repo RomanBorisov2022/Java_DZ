@@ -4,7 +4,7 @@
 package DZ_03;
 
 import java.util.ArrayList;
-import java.util.Collections;
+// import java.util.Collections;
 
 public class Task_3 {
     public static void main(String[] args) {

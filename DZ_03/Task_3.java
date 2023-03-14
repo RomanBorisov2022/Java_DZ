@@ -17,6 +17,7 @@ public class Task_3 {
         list.add(6543);
         list.add(-1);
         list.add(0);
+        System.out.println("Список чисел " + list);
 
         int min = list.get(0);
         int max = list.get(0);

@@ -18,14 +18,13 @@ public class Task_1 {
         phoneNumbers.put(6153, "Буйнов");
         phoneNumbers.put(71324, "Иванов");
         phoneNumbers.put(86452, "Иванов");
-        System.out.println("Введите фамилию сотрудника: ");
+        System.out.println("Введите фамилию: ");
         String s = System.console().readLine();
         if (phoneNumbers.containsValue(s)) {
             for (Integer number : phoneNumbers.keySet()) {
                 if (phoneNumbers.get(number).equals(s))
                     System.out.println(phoneNumbers.get(number) + " - номер телефона: " + number);
             }
-        } else System.out.println(("Нет сотрудника с такой фамилией"));
-        
+        } else System.out.println(("Нет контакта с такой фамилией"));       
     }
 }
